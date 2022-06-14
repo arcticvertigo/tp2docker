@@ -7,6 +7,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def api_weather():
     LAT = request.args.get('lat')
+    
     LONG = request.args.get('lon')
 
     uri = f"http://api.openweathermap.org/data/2.5/weather?lat={LAT}&lon={LONG}&appid=6f29b20e132befc91999eee96ac0cbc2&units=metric"
