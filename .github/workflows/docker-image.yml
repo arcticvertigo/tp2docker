@@ -20,8 +20,8 @@ jobs:
         name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          username: arcticvertigo
+          password: 8GgUSnayZN6LBWr
       -
         name: Build and push
         uses: docker/build-push-action@v3
@@ -29,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.USERNAME }}/meteoapi:tp2docker
+          tags: arcticvertigo/meteoapi:tp2docker
