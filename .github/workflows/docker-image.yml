@@ -29,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.USERNAME }}/meteoapi:tp2docker
+          tags: ${{ secrets.USERNAME }}/meteoapi:latest
